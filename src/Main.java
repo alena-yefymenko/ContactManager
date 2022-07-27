@@ -4,23 +4,26 @@ public class Main {
 
         ContactsManager myContactsManager = new ContactsManager();
 
-        Contact contact = new Contact();
-        contact.name = "Alena";
-        contact.phoneNumber = "+37125745411";
-        myContactsManager.addContact(contact);
+        Contact alena = new Contact();
+        alena.name = "Alena";
+        alena.phoneNumber = "+37125745411";
+        myContactsManager.addContact(alena);
 
-        contact = new Contact();
-        contact.name = "Ben";
-        contact.phoneNumber = "+37112345678";
-        myContactsManager.addContact(contact);
+        Contact ben = new Contact();
+        ben.name = "Ben";
+        ben.phoneNumber = "+37112345678";
+        myContactsManager.addContact(ben);
 
-        contact = new Contact();
-        contact.name = "Nick";
-        contact.phoneNumber = "+37112345678";
-        myContactsManager.addContact(contact);
+        Contact nick = new Contact();
+        nick.name = "Nick";
+        nick.phoneNumber = "+37112345678";
+        myContactsManager.addContact(nick);
 
         Contact result = myContactsManager.searchContact("Alena");
-        System.out.println(result.phoneNumber);
+       // if (result != null) {
+            System.out.println(result.phoneNumber);
+       // }
+
 
     }
 
