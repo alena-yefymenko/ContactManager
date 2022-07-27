@@ -4,18 +4,18 @@ public class Main {
 
         ContactsManager myContactsManager = new ContactsManager();
 
-        Contact alena = new Contact("Alena", "", "+37125745411");
+        Contact alena = new Contact("Alena", "alena.efimka.@gmail.com", "+37125745411");
         myContactsManager.addContact(alena);
 
-        Contact ben = new Contact("Ben","","+37112345678");
+        Contact ben = new Contact("Ben","ben.bom@gmail.com","+37112345678");
         myContactsManager.addContact(ben);
 
-        Contact nick = new Contact("Nick", "","+37112345678");
+        Contact nick = new Contact("Nick", "nick.nok@gmail.com","+37112345678");
         myContactsManager.addContact(nick);
 
-        Contact result = myContactsManager.searchContact("Alena");
+        Contact result = myContactsManager.searchContact("Ben");
        // if (result != null) {
-            System.out.println(result.getPhoneNumber());
+            System.out.println(result.getEmail());
        // }
 
 

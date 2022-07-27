@@ -5,8 +5,12 @@ public class Contact {
 
     public Contact(String name, String email, String phoneNumber){
         this.name = name;
+        if(email==null || email.equals("")){
+            throw new RuntimeException("email can not be null or empty");
+        }
         this.email = email;
         this.phoneNumber = phoneNumber;
+
     }
     public String getName(){
         return name;
@@ -18,6 +22,7 @@ public class Contact {
     public String getPhoneNumber() {
         return phoneNumber;
     }
+
 }
 
 
